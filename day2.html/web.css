@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a{
+    text-decoration: none;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+.navlinks li{
+    list-style: none;
+    display: inline-block;
+    gab: 50px;
+
+}
+.logo{
+    font-size: bold;
+    color: coral;
+    font-size: 25px;
+}
