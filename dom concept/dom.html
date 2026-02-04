@@ -1,0 +1,95 @@
+       <!DOCTYPE html>
+       <html lang="en">
+       <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+       </head>
+       <link rel="stylesheet" href="dom.css">
+       <body>
+        <center><h1 style="color: chartreuse;margin-top: 30px;">Calculator</h1></center>
+        <div class="calculator">
+        <div class="add">
+        <h2>Addition</h2>
+        <input id="num1" placeholder="enter number">
+        <input id="num2" placeholder="enter 2nd number">
+        <button onclick="add()">add</button>
+        <p id="result">RESULT</p>
+        <hr>
+        </div>
+
+        <div class="subtract"> 
+        <h2>Subtraction</h2>
+        <input id="sub1" placeholder="sub value 1">
+        <input id ="sub2" placeholder="sub value 2">
+        <button onclick="subtract()">subtract</button>
+        <p id="subresult">RESULT</p>
+        <hr>
+        </div>
+
+        <div class="divide">
+        <h2>Division</h2>
+        <input id="div1" placeholder="div value 1">
+        <input id ="div2" placeholder="div value 2">
+        <button onclick="divider()">divide</button>
+        <p id="divresult">RESULT</p>
+        <hr>
+        </div>
+
+        <div class="multiply">
+        <h2>Multiplication</h2>
+        <input id="mul1" placeholder="div value 1">
+        <input id ="mul2" placeholder="div value 2">
+        <button onclick="multiple()">multiple</button>
+        <p id="mulresult">RESULT</p>
+        </div>
+
+</div>
+       </body>
+       </html>
+    <script>
+    
+            var num1val=document.getElementById("num1")
+            var num2val=document.getElementById("num2")
+        
+        function add(){
+        var num1value=Number(num1val.value)
+        var num2value=Number(num2val.value)
+
+        var total=num1value+num2value
+        result.textContent="RESULT: "+total
+        }
+
+        
+        var sub1val=document.getElementById("sub1")
+        var sub2val=document.getElementById("sub2")
+        function subtract(){
+        var sub1value=Number(sub1val.value)
+        var sub2value=Number(sub2val.value)
+        var subresults=sub1value-sub2value
+        subresult.textContent="RESULT:"+subresults
+
+    
+        }
+
+        var div1val=document.getElementById("div1")
+        var div2val=document.getElementById("div2")
+        function divider(){
+        var div1value=Number(div1val.value)
+        var div2value=Number(div2val.value)
+        var divresults=div1value/div2value
+        divresult.textContent="RESULT:"+divresults
+            
+        }
+
+        var mul1val=document.getElementById("mul1")
+        var mul2val=document.getElementById("mul2")
+        function multiple(){
+        var mul1value=Number(mul1val.value)
+        var mul2value=Number(mul2val.value)
+        var mulresults=mul1value*mul2value
+        mulresult.textContent="RESULT:"+mulresults
+            
+        }
+
+    </script>
