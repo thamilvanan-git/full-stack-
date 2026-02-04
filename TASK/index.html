@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simple Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Task Manager</h1>
+
+  <!-- Task Input Form -->
+  <form id="taskForm">
+    <input type="text" id="title" placeholder="Task Title" required>
+    <input type="text" id="description" placeholder="Description" required>
+    <select id="priority" required>
+      <option value="high">High</option>
+      <option value="medium">Medium</option>
+      <option value="low">Low</option>
+    </select>
+    <button type="submit">Add Task</button>
+  </form>
+
+  <!-- Tabs -->
+  <div class="tabs">
+    <div class="tab active" data-status="Pending">Pending</div>
+    <div class="tab" data-status="In-Progress">In-Progress</div>
+    <div class="tab" data-status="Completed">Completed</div>
+  </div>
+
+  <!-- Task Container -->
+  <div id="taskContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
