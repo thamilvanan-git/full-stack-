@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #979595;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #41347c;
+}
+
+.container {
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  width: 350px;
+  border-radius: 8px;
+  box-shadow: 0 15px 30px rgba(7, 7, 7, 0.1);
+}
+
+input {
+  width: 320PX;
+  padding: 8px;
+  margin: 5px 0;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.options button {
+  margin: 5px 0;
+}
+
+.hide {
+  display: none;
+}
+
+#msg {
+  color: rgb(239, 8, 8);
+  text-align: center;
+}
